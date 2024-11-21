@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #122928; /* Primary background color */
+    color: #ffffff; /* Text color for contrast */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #70c2b4; /* Logo color */
+    color: #122928;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    font-size: 1.8em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #122928;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #70c2b4; /* Logo color for hero section */
+    text-align: center;
+    padding: 50px 20px;
+    color: #122928; /* Dark color for text */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #122928; /* Dark color for button */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #0f2020; /* Slightly darker hover effect */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #122928; /* Matches the primary color */
+}
+
+.dropdown {
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid #70c2b4; /* Matches the logo color */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background */
+    color: #122928; /* Dark text for readability */
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #122928;
+    box-shadow: 0 0 5px rgba(18, 41, 40, 0.5); /* Glow effect */
+}
+
+
+/* Cards Section */
+.cards {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; /* Text color for contrast */
+}
+
+.cards h2 {
+    margin-bottom: 20px;
+    color: #70c2b4; /* Logo color */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff; /* White background for contrast */
+    color: #122928;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #122928;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #122928; /* Dark background */
+    color: #70c2b4; /* Logo color for text */
+    margin-top: 20px;
+}
