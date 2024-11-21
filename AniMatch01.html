@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani Match</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <h1>Ani Match</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Find the Perfect Friend for Your Pet</h2>
+            <p>Connect your pet with a perfect companion nearby!</p>
+
+            <!-- Pet Category Dropdown -->
+            <label for="pet-category" class="dropdown-label">Choose your pet category:</label>
+            <select id="pet-category" name="pet-category" class="dropdown">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="horse">Horse</option>
+                <option value="rabbit">Rabbit</option>
+            </select>
+
+            <button onclick="window.location.href='match.html'">Find Matches</button>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+        <h2>Featured Pets</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Pet 1">
+                <h3>Charlie</h3>
+                <p>Golden Retriever, 2 years old</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Pet 2">
+                <h3>Whiskers</h3>
+                <p>Siberian Cat, 3 years old</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Pet 3">
+                <h3>Buddy</h3>
+                <p>Beagle, 1.5 years old</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Ani Match | Connecting Pets Everywhere</p>
+    </footer>
+</body>
+</html>
