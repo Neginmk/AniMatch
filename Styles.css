@@ -6,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body and Background */
 body {
     background-color: #122928; /* Primary background color */
     color: #ffffff; /* Text color for contrast */
@@ -18,14 +19,26 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #70c2b4; /* Logo color */
-    color: #122928;
-    padding: 10px 20px;
+    padding: 15px 30px;
 }
 
-.navbar h1 {
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px; /* Adjusted size */
+    height: auto;
+}
+
+.logo-text {
     font-size: 1.8em;
+    color: #122928; /* Dark text color */
 }
 
+/* Navigation Links */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -44,15 +57,15 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: #70c2b4; /* Logo color for hero section */
+    background-color: #70c2b4; /* Hero background color */
     text-align: center;
     padding: 50px 20px;
-    color: #122928; /* Dark color for text */
+    color: #122928; /* Dark text color */
 }
 
 .hero h2 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .hero p {
@@ -74,35 +87,9 @@ body {
     background-color: #0f2020; /* Slightly darker hover effect */
 }
 
-/* Dropdown Menu Styling */
-.dropdown-label {
-    display: block;
-    margin-top: 20px;
-    font-size: 1.1em;
-    color: #122928; /* Matches the primary color */
-}
-
-.dropdown {
-    width: 200px;
-    padding: 10px;
-    font-size: 1em;
-    margin-top: 10px;
-    border: 1px solid #70c2b4; /* Matches the logo color */
-    border-radius: 5px;
-    background-color: #ffffff; /* White background */
-    color: #122928; /* Dark text for readability */
-}
-
-.dropdown:focus {
-    outline: none;
-    border-color: #122928;
-    box-shadow: 0 0 5px rgba(18, 41, 40, 0.5); /* Glow effect */
-}
-
-
 /* Cards Section */
 .cards {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     color: #ffffff; /* Text color for contrast */
 }
@@ -110,13 +97,15 @@ body {
 .cards h2 {
     margin-bottom: 20px;
     color: #70c2b4; /* Logo color */
+    font-size: 2em;
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
-    flex-wrap: wrap;
+    justify-items: center;
+    padding: 0 10px;
 }
 
 .card {
@@ -125,13 +114,16 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    width: 200px;
+    width: 100%;
+    max-width: 300px; /* Ensure cards don’t grow too large */
     text-align: center;
 }
 
 .card img {
     border-radius: 10px;
     margin-bottom: 10px;
+    width: 100%; /* Ensure images fit the card width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .card h3 {
@@ -148,8 +140,24 @@ body {
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #122928; /* Dark background */
     color: #70c2b4; /* Logo color for text */
     margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
